@@ -1,0 +1,81 @@
+<!DOCtype html>
+<html>
+    <head>
+        <title>Restobars in Dumaguete City</title>
+        <style>
+         body{
+            margin: 0;
+        }
+        .image-grid{
+            --gap: 16px;
+            --num-cols: 4;
+            --row-height: 300px;
+
+            box-sizing: border-box;
+            padding: var(--gap);
+
+            display: grid;
+            grid-template-columns: repeat(var(--num-cols),1fr);
+            grid-auto-rows: var(--row-height);
+            gap: var(--gap);
+        }
+
+        .image-grid >img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-grid-col-2{
+            grid-column: span 2;
+        }
+        .image-grid-col-2{
+            grid-row: span 2;
+        }
+        /* Anything under 1024 pixel */
+        @media screen and (max-width: 1024px) {
+        </style>
+
+</head>
+
+<body>
+    <center>
+        <div style="border: whitesmoke; border-width: 10px; border-style:outset; background-color:lightskyblue"> 
+        <table>
+            <tr><td><img src="images/logos/dgteseal.png" width="100px" height="100px"></td>
+            <td id="Welcome">Welcome to the City of Gentle People!</td></tr>
+        
+        <div id="nav-menu">
+        <table name="nav-menu">
+        </table>
+        </div>
+        </div>
+        <br>
+        <br>
+        <font style="border:whitesmoke; border-width: 10px; border-style:outset; background-color: lightskyblue;"><td><a href="index.html">About</a></td></font>
+        <font style="border:whitesmoke; border-width:10px; border-style:outset;"><td><a href="Tourist Spots.html">Tourist Spots</a></td></font>  
+        <font style="border: whitesmoke; border-width:10px; border-style:outset;"><td><a href="Restaurants & Bars.html">Restobars</a></td></font>
+        <font style="border:whitesmoke; border-width:10px; border-style:outset;"><td><a href="Bookings.html">Bookings</a></td></font>
+     
+        <br>
+        <br>
+<center>
+    </div>
+
+    <div class="image-grid">
+        <img src="restobars/casablanca.JPG" alt="aa">
+        <img src="restobars/hayahay.JPG" alt="aa">
+        <img src="restobars/jos.JPG" alt="aa">
+        <img src="restobars/lantaw.JPG" alt="aa">
+    </div>
+    <br>
+    <br>
+    <div class="image-grid">
+        <img src="restobars/sans rival.JPG">
+        <img src="restobars/sans rival2.JPG">
+        <img src="restobars/sans rival3.JPG">
+        <img src="restobars/drinks1.JPG">
+    </div>
+    
+</body>
+</html>
